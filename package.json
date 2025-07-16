@@ -1,0 +1,38 @@
+{
+  "name": "@aautcq/swarm-shape",
+  "version": "0.0.1",
+  "description": "Canvas 2D path made out of a particles swarm",
+  "main": "dist/index.js",
+  "type": "module",
+  "homepage": "https://github.com/aautcq/swarm-shape",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aautcq/swarm-shape.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aautcq/swarm-shape/issues"
+  },
+  "keywords": [
+    "canvas",
+    "2d",
+    "path",
+    "swarm"
+  ],
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Adrien Autricque <adrien.autricqu@gmail.com> (https://aautcq.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
