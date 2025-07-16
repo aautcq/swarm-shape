@@ -1,13 +1,13 @@
-# @aautcq/swarm-shape
+# swarm-shape
 
-![Image](https://github.com/user-attachments/assets/cde98d2f-dd9c-44ac-89fa-b0389da30adf)
+![Image](https://aautcq-github-repositories-images.s3.eu-west-3.amazonaws.com/swarm-shape.gif)
 
 Canvas 2D path made out of a particles swarm.
 
 ## Install
 
 ```bash
-npm i @aautcq/swarm-shape
+npm i swarm-shape
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm i @aautcq/swarm-shape
 ### Basic
 
 ```ts
-import { computeAnimation } from '@aautcq/swarm-shape'
+import { computeAnimation } from 'swarm-shape'
 
 const { init, animate } = computeAnimation(
   document.getElementById('my-canvas'), // HTML canvas element or id
