@@ -208,8 +208,8 @@ export function computeAnimation(
   }
 
   canvasEl.addEventListener('mousemove', ({ clientX, clientY }) => {
-    cursor.x = clientX
-    cursor.y = clientY
+    cursor.x = clientX - canvasEl.offsetLeft
+    cursor.y = clientY - canvasEl.offsetTop
   })
 
   canvasEl.addEventListener('mouseleave', () => {
