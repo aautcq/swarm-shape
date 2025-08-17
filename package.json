@@ -1,6 +1,6 @@
 {
   "name": "swarm-shape",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Canvas 2D path made out of a particles swarm",
   "main": "dist/index.js",
   "private": false,
