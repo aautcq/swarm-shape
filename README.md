@@ -50,6 +50,9 @@ const options = {
 
     /** Number of particles */
     amount: 2000,
+
+    /** Particle color */
+    color: 'white',
   },
   physics: {
     /** Noise factor */

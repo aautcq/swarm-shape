@@ -7,6 +7,7 @@ interface Particle {
   size: number
   position: Position
   destination: Position
+  color: string
 }
 
 type MakeOptionalUndefined<T> = {
@@ -35,6 +36,12 @@ export interface AnimationOptions {
      * @defaultValue 2_000
      */
     amount?: number
+
+    /**
+     * Particle color
+     * @defaultValue 'white'
+     */
+    color?: string
   }
   physics?: {
     /**
@@ -86,7 +93,7 @@ function drawParticle(particle: Particle, ctx: CanvasRenderingContext2D | null) 
     throw new Error('Canvas not found')
   }
 
-  ctx.fillStyle = 'white'
+  ctx.fillStyle = particle.color
   ctx.beginPath()
   ctx.arc(particle.position.x, particle.position.y, particle.size, 0, Math.PI * 2)
   ctx.closePath()
@@ -190,6 +197,7 @@ export function computeAnimation(
         position: { x, y },
         destination,
         size: particleOptions.size,
+        color: options?.particles?.color ?? 'white',
       })
     }
   }
